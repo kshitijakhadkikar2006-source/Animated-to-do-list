@@ -1,0 +1,88 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    /* This padding ensures the box doesn't touch the edges on very small screens */
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+/* --- Main Container --- */
+.todo-container {
+    background-color: white;
+    width: 100%;
+    max-width: 400px; /* Makes it responsive! */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* --- Input Area --- */
+.input-group {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1; /* Makes the input take up all available space */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Task List Display --- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* We will style the list items (li) more in the Javascript week, 
+   but this sets up the foundation */
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+}
+
+li:last-child {
+    border-bottom: none;
+}
